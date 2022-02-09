@@ -1,0 +1,28 @@
+version: '3'
+services:
+  lb:
+    image: haproxy
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./haproxy:/usr/local/etc/haproxy
+
+  dj_compose_instance_1:
+    image: djcompose
+    environment:
+      - PORT=1111
+
+  dj_compose_instance_2:
+    image: djcompose
+    environment:
+      - PORT=2222
+
+  dj_compose_instance_3:
+    image: djcompose
+    environment:
+      - PORT=3333
+
+  dj_compose_instance_4:
+    image: djcompose
+    environment:
+      - PORT=4444
