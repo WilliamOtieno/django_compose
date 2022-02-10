@@ -26,3 +26,8 @@ services:
     image: djcompose
     environment:
       - PORT=4444
+
+  dj_compose_instance_5:
+    image: djcompose
+    environment:
+      - PORT=5555
