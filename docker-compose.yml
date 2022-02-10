@@ -31,3 +31,18 @@ services:
     image: djcompose
     environment:
       - PORT=5555
+
+  dj_compose_instance_6:
+    image: djcompose
+    environment:
+      - PORT=6666
+
+  dj_compose_instance_7:
+    image: djcompose
+    environment:
+      - PORT=7777
+
+  dj_compose_instance_8:
+    image: djcompose
+    environment:
+      - PORT=8888
